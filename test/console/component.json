@@ -1,0 +1,8 @@
+{
+  "name": "tile-test",
+  "paths": ["../../.."],
+  "dependencies": {
+    "gameponent/canvas": "*"
+  },
+  "local": ["tile"]
+}

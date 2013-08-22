@@ -1,0 +1,39 @@
+{
+  "tilesets": [
+    {
+      "name": "rages", 
+      "groups": [
+        {
+          "infos": {
+            "fps": 20
+          }, 
+          "tiles": [
+            {
+              "y": 0, 
+              "x": 0, 
+              "height": 298, 
+              "name": "scared-yao_0", 
+              "width": 256
+            }
+          ], 
+          "name": "scared-yao"
+        }, 
+        {
+          "infos": {
+            "fps": 20
+          }, 
+          "tiles": [
+            {
+              "y": 298, 
+              "x": 0, 
+              "height": 200, 
+              "name": "no_0", 
+              "width": 162
+            }
+          ], 
+          "name": "no"
+        }
+      ]
+    }
+  ]
+}
