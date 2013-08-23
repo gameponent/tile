@@ -8,7 +8,25 @@ window.onload = function () {
     screen.root.addLayer({layer: layer});
 
     tile.load({url: '/static/assets/tilesets', success: function (options) {
-        window.tilesets = options.tilesets;
+        var tilesets = options.tilesets;
+        var rages = tilesets.rages;
+
+        rages.load({success: function () {
+            layer.addView({view : new canvas.ImageView({
+                image: rages.group({group: 'no'}).tile(),
+                x: 100,
+                y: 100
+            })});
+
+            layer.addView({view : new canvas.ImageView({
+                image: rages.group({group: 'scared-yao'}).tile(),
+                x: 200,
+                y: 100
+            })});
+
+            screen.draw();
+        }});
+        
     }});
 
 };
